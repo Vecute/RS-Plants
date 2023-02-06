@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'inica';
+    src: url("assets/fonts/Inika-Regular.ttf");
+    font-weight: 100;
+  }
+  @font-face {
+    font-family: 'inter';
+    src: url("assets/fonts/Inter-Regular.ttf");
+    font-weight: 100;
+  }
+
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    background-color: #7abfc9;
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    height: 144px;
+    width: 1440px;
+    font-family: 'inica';
+    font-size: 16px;
+    border: 1px solid #020607;
+    background-color: #EDF2EC;
+}
+
+.main {
+
+}
+
+.footer {
+    height: 130px;
+    width: 1440px;
+    font-family: 'inter';
+    font-size: 20px;
+    border: 1px solid #020607;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFFFFF;
+
+}
+
+.nav {
+    margin: 47px 109px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 452px;
+    padding-left: 0px;
+    margin: 0px;
+  }
+
+html {
+    scroll-behavior: smooth; 
+  }
+
+.nav-link {
+    text-decoration: none;
+    color: #010201;
+}
+
+.nav-link:hover {
+  color: #E06733;
+  font-weight: bold;
+
+}
+
+.logo {
+    display: flex;
+    list-style: none;
+    width: 452px;
+    padding-left: 0px;
+    align-content: flex-start;
+}
+
+.logo-picture {
+    padding-bottom: 3.5px;
+}
+
+.socialNetworks {
+  cursor: pointer;
+}

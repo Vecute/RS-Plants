@@ -14,12 +14,13 @@
   }
 
 body {
-    background-color: #7abfc9;
-    width: 1440px;
+    background-color: #ffffff;
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 1440px;
 }
 
 .header {
@@ -27,25 +28,342 @@ body {
     width: 1440px;
     font-family: 'inica';
     font-size: 16px;
-    border: 1px solid #020607;
     background-color: #EDF2EC;
 }
 
 .main {
+  width: 1440px;
+  display: flex;
+  flex-direction: column;
+}
 
+.home {
+  height: 532px;
+  background-color: #EDF2EC;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.basicInfo {
+  width: 549px;
+}
+
+.mainHeader {
+  color: #717171;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 50px;
+}
+
+.plants {
+  color: #499A18;
+}
+
+.mainText {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  color: #636060;
+  margin-bottom: 35px;
+}
+
+.learnMore {
+  width: 158px;
+  height: 44px;
+  border: 2px solid #E06733;
+  border-radius: 10px;
+  background-color: #EDF2EC;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.learnMore:hover {
+  color: #EDF2EC;
+  background-color: #E06733
+}
+
+.aboutUs {
+  height: 666px;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.aboutInfo {
+  width: 605px;
+}
+
+.aboutHeader {
+  color: #499A18;
+  font-family: 'Inikas';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  width: 463px;
+  height: 102px;
+}
+
+.profExp {
+  color: #E06733;
+}
+
+.aboutText {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #636060;
+}
+
+.service {
+  height: 1300px;
+  background-color: #EDF2EC;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+h2 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #E06733;
+}
+
+h3 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #717171;
+  margin: 0px;
+}
+
+.pictureBook {
+  width: 1222px;
+  height: 955px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.pictureInBook {
+  width: 330px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.smallBord {
+  border: 1px solid #E3E1D5;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.topMenuBook {
+  width: 1222px;
+  display: flex;
+  flex-direction: row;
+}
+
+.topMenuName {
+  width: 446px;
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  color: #499A18;
+}
+
+.changeType {
+  width: 559px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bookButton {
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #E06733;
+  width: 161px;
+  height: 50px;
+  border: 2px solid #E06733;
+  border-radius: 5px;
+  background-color: #EDF2EC;
+}
+
+.bookButton:hover {
+  color: #EDF2EC;
+  background-color: #E06733
+}
+
+.price {
+  height: 560px;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.priceContent {
+  width: 1222px;
+  height: 405px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blockPrices {
+  width: 332px;
+  height: 282px;
+  border: 1px solid #E3E1D5;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.buttonPrice {
+  width: 250px;
+  height: 50px;
+  background: #EDF2EC;
+  border: 0;
+  border-radius: 20px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.leftPriceText {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #000000;
+}
+
+.rightPriceText {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #000000;
+  text-align: end;
+}
+
+.rightPriceTextGardens {
+  color: #499A18;
+}
+
+.rightPrice {
+  display: flex;
+  flex-direction: column;
+  width: 452px;
+  height: 405px;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.contactButton {
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #E06733;
+  width: 162px;
+  height: 50px;
+  border: 1px solid #E06733;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+}
+
+.leftPrice {
+
+}
+
+.contacts {
+  height: 550px;
+  background-color: #EDF2EC;
 }
 
 .footer {
     height: 130px;
     width: 1440px;
     font-family: 'inter';
+    font-style: normal;
+    font-weight: 400;
     font-size: 20px;
-    border: 1px solid #020607;
+    line-height: 50px;
+    color: #000000;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
     background-color: #FFFFFF;
+}
 
+.footerContent {
+  width: 1220px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rightFooter {
+  cursor: pointer;
+  display: flex;
+  width: 188px;
+  height: 50px;
+  justify-content: space-between;
+}
+
+.socialNetworks {
+  display: flex;
+  align-items: center;
+}
+
+.middleFooter {
+  width: 211px;
+  height: 50px;
+}
+
+.leftFooter {
+  width: 182px;
+  height: 50px;
+  text-align: justify;
 }
 
 .nav {
@@ -77,7 +395,6 @@ html {
 .nav-link:hover {
   color: #E06733;
   font-weight: bold;
-
 }
 
 .logo {
@@ -92,6 +409,4 @@ html {
     padding-bottom: 3.5px;
 }
 
-.socialNetworks {
-  cursor: pointer;
-}
+

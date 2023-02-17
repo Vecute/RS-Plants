@@ -19,29 +19,32 @@ html {
 
 body {
   background-color: #ffffff;
-  margin: auto;
+  margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   max-width: 1440px;
+  height: 3870px;
 }
 
 .header {
-  height: 134px;
-  width: 1440px;
+  height: 3.463%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   font-family: 'Inika';
   font-size: 16px;
   background-color: #EDF2EC;
-  margin-bottom: 2px;
 }
 
 .headerContent {
-  margin: 41px 111px;
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 84.722%;
 }
 
 .headerLogo {
@@ -55,7 +58,6 @@ body {
 .headerLogoName {
   display: flex;
   list-style: none;
-  width: 452px;
   padding-top: 6.5px;
   align-content: flex-start;
 }
@@ -80,7 +82,8 @@ body {
 }
 
 .main {
-  width: 1440px;
+  width: 100%;
+  height: 93.178%;
   display: flex;
   flex-direction: column;
 }
@@ -90,16 +93,20 @@ body {
   background-color: #EDF2EC;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .homeText {
-  width: 549px;
-  padding-top: 60px;
+  width: 38.125%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 69.549%;
 }
 
 .homeLeafs {
-  margin-top: 52px;
-  padding-right: 10px;
+  width: 31.167%;
 }
 
 .homeHeader {
@@ -109,6 +116,7 @@ body {
   font-weight: 700;
   font-size: 45px;
   line-height: 50px;
+  margin: 0;
 }
 
 .homeHighlighting {
@@ -122,9 +130,6 @@ body {
   font-size: 20px;
   line-height: 35px;
   color: #636060;
-  padding-top: 5px;
-  width: 525px;
-  height: 105px;
 }
 
 .homeLearnMore {
@@ -141,7 +146,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 51px;
 }
 
 .homeLearnMore:hover {
@@ -171,7 +175,7 @@ body {
   line-height: 52px;
   width: 463px;
   height: 102px;
-  margin-top: 20px;
+  margin-top: 32px;
 }
 
 .aboutUsHighlighting {
@@ -185,7 +189,8 @@ body {
   font-size: 20px;
   line-height: 30px;
   color: #636060;
-  margin-top: 40px;
+  margin-top: 42px;
+  margin-left: 1px;
 }
 
 .service {
@@ -228,9 +233,11 @@ body {
   color: #E06733;
   width: 161px;
   height: 50px;
-  border: 2px solid #E06733;
+  border: 1px solid #E06733;
   border-radius: 5px;
   background-color: #EDF2EC;
+  margin-top: 6px;
+  margin-left: 2px;
 }
 
 .serviceButton:hover {
@@ -245,7 +252,7 @@ body {
   flex-wrap: wrap;
   text-align: center;
   justify-content: space-between;
-  padding-top: 38px;
+  padding-top: 41px;
 }
 
 h2 {
@@ -255,7 +262,8 @@ h2 {
   font-size: 20px;
   line-height: 20px;
   color: #E06733;
-  margin-top: 6px;
+  margin-top: 10px;
+  margin-bottom: 13px;
 }
 
 h3 {
@@ -265,7 +273,7 @@ h3 {
   font-size: 16px;
   line-height: 20px;
   color: #717171;
-  margin: 0px;
+  margin: 0;
 }
 
 .serviceCard {
@@ -287,7 +295,6 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: ;
 }
 
 .priceContent {
@@ -310,7 +317,7 @@ h4 {
   font-size: 40px;
   line-height: 48px;
   color: #000000;
-  margin-top: 36px;
+  margin-top: 40px;
 }
 
 .priceRates {
@@ -353,6 +360,7 @@ h4 {
   width: 452px;
   height: 560px;
   align-items: flex-end;
+  margin-top: 1px;
 }
 
 .priceHeader {
@@ -360,7 +368,7 @@ h4 {
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
-  line-height: 48px;
+  line-height: 50px;
   color: #000000;
   text-align: end;
 }
@@ -389,11 +397,11 @@ h4 {
 }
 
 .priceLeafs {
-  margin-top: 39px;
+  margin-top: 41px;
 }
 
 .contacts {
-  width: 1440px;
+  width: 100%;
   height: 550px;
   background-color: #EDF2EC;
   display: flex;
@@ -402,8 +410,8 @@ h4 {
 
 .contactsWoman {
   display: flex;
-  margin-top: 53px;
-  margin-left: 110px;
+  margin-top: 52px;
+  margin-left: 109px;
 }
 
 h6 {
@@ -414,8 +422,8 @@ h6 {
   font-size: 40px;
   line-height: 52px;
   color: #499A18;
-  margin-top: 56px;
-  margin-left: 112px;
+  margin-top: 59px;
+  margin-left: 113px;
 }
 
 .contactsCityButton {
@@ -437,23 +445,23 @@ h6 {
   border: 0;
   padding-left: 20px;
   padding-right: 35px;
-  margin-top: 144px;
+  margin-top: 147px;
   margin-left: 70px;
 }
 
 .footer {
-    height: 130px;
-    width: 1440px;
-    font-family: 'inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 50px;
-    color: #000000;
-    display: flex;
-    justify-content: center;
-    background-color: #FFFFFF;
-    padding-bottom: 6px;
+  height: 3.359%;
+  width: 100%;
+  font-family: 'inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 50px;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  background-color: #FFFFFF;
+  padding-bottom: 1px;
 }
 
 .footerContent {
@@ -471,9 +479,9 @@ h6 {
 }
 
 .footerMiddle {
-  width: 225px;
+  width: 227px;
   height: 50px;
-  padding-left: 15px;
+  padding-left: 18px;
 }
 
 .footerRight {
@@ -482,9 +490,57 @@ h6 {
   width: 188px;
   height: 50px;
   justify-content: space-between;
+  padding-left: 1px;
 }
 
 .footerSocialNetworks {
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  .body {
+    width: 768px;
+  }
+  .header {
+    max-height: 117px;
+  }
+  .main {
+    max-height: 4307px;
+  }
+  .home {
+    max-height: 420px;
+    align-items: flex-start;
+    padding-top: 40px;
+  }
+  .homeText {
+    order: -1;
+    width: 45.052%;
+    max-height: 310px;
+  }
+  .homeLeafs {
+    width: 36.458%;
+  }
+  .homeHeader {
+    font-size: 35px;
+  }
+  .homeDescription {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .aboutUs {
+    max-height: 783px;
+  }
+  .service {
+    max-height: 1708px;
+  }
+  .contacts {
+    max-height: 4307px;
+  }
+  .prices {
+    max-height: 585px;
+  }
+  .footer {
+    max-height: 181px;
+  }
 }

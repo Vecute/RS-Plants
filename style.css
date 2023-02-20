@@ -83,7 +83,6 @@ body {
 
 .main {
   width: 100%;
-  height: 93.178%;
   display: flex;
   flex-direction: column;
 }
@@ -146,6 +145,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 2px;
 }
 
 .homeLearnMore:hover {
@@ -160,6 +160,7 @@ body {
   justify-content: space-around;
   align-items: center;
   margin: 0 30px;
+  width: 100%;
 }
 
 .aboutUsText {
@@ -500,24 +501,39 @@ h6 {
 
 @media (max-width: 768px) {
   body {
-    max-height: 4605px;
     height: 4605px;
+    width: 768px;
+    justify-content: flex-start;
+  }
+  main {
+    height: 4307px;
   }
   .header {
     max-height: 117px;
+    height: 117px;
+  }
+  .headerContent {
+    width: 668px;
+  }
+  .headerNav {
+    line-height: 50px;
   }
   .home {
     max-height: 420px;
-    align-items: flex-start;
-    padding-top: 40px;
+    height: 420px;
+    align-items: center;
+    padding: 0 20px;
   }
   .homeText {
     order: -1;
     width: 45.052%;
-    max-height: 310px;
+    height: 310px;
+    justify-content: space-between;
+    margin-top: -35px;
   }
   .homeLeafs {
     width: 36.458%;
+    margin-top: -70px;
   }
   .homeHeader {
     font-size: 35px;
@@ -525,16 +541,20 @@ h6 {
   .homeDescription {
     font-size: 16px;
     line-height: 25px;
+    margin: 0;
+  }
+  .homeLearnMore {
+    margin-left: -3px;
   }
   .aboutUs {
     max-height: 783px;
     height: 783px;
     flex-direction: column;
+    margin: 0;
   }
   .aboutUsHeader {
     font-size: 35px;
     line-height: 46px;
-
     align-items: center;
   }
   .aboutUsHousePlant{
@@ -547,9 +567,9 @@ h6 {
   }
   .serviceTop {
     flex-wrap: wrap;
-    width: 768px;
     justify-content: flex-start;
     margin-left: 55px;
+    width: 768px;
   }
   .serviceHeader {
     font-size: 35px;
@@ -557,9 +577,9 @@ h6 {
   }
   .serviceBottom {
     flex-wrap: wrap;
-    width: 768px;
     justify-content: space-around;
     height: 1426px;
+    width: 768px;
   }
   .serviceCard {
     width: 281px;
@@ -624,10 +644,19 @@ h6 {
   }
   .footer {
     max-height: 181px;
+    height: 181px;
+    justify-content: center;
+    line-height: 24px;
   }
   .footerContent {
     flex-direction: column;
     height: 181px;
-    justify-content: space-around;
+    justify-content: center;
+  }
+  .footerLeft {
+    padding: 16px 0 0 0;
+  }
+  .footerMiddle {
+    padding: 7px 0 0 7px;
   }
 }

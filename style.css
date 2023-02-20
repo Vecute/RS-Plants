@@ -499,14 +499,12 @@ h6 {
 }
 
 @media (max-width: 768px) {
-  .body {
-    width: 768px;
+  body {
+    max-height: 4605px;
+    height: 4605px;
   }
   .header {
     max-height: 117px;
-  }
-  .main {
-    max-height: 4307px;
   }
   .home {
     max-height: 420px;
@@ -530,17 +528,106 @@ h6 {
   }
   .aboutUs {
     max-height: 783px;
+    height: 783px;
+    flex-direction: column;
+  }
+  .aboutUsHeader {
+    font-size: 35px;
+    line-height: 46px;
+
+    align-items: center;
+  }
+  .aboutUsHousePlant{
+    height: 258px;
+    width: 250px;
   }
   .service {
-    max-height: 1708px;
+    max-height: 1780px;
+    height: 1780px;
+  }
+  .serviceTop {
+    flex-wrap: wrap;
+    width: 768px;
+    justify-content: flex-start;
+    margin-left: 55px;
+  }
+  .serviceHeader {
+    font-size: 35px;
+    line-height: 45.61px;
+  }
+  .serviceBottom {
+    flex-wrap: wrap;
+    width: 768px;
+    justify-content: space-around;
+    height: 1426px;
+  }
+  .serviceCard {
+    width: 281px;
+  }
+  .price {
+    max-height: 585px;
+    height: 585px;
+  }
+  .priceContent {
+    justify-content: space-around;
+  }
+  .priceLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .priceRates {
+    margin-top: 0;
+  }
+  .priceRight {
+    justify-content: space-between;
+    width: 358px;
+    height: 358px;
+  }
+  h4 {
+    font-size: 35px;
+    line-height: 42px;
+  }
+  .priceHeader {
+    font-size: 25px;
+    line-height: 35px;
+    margin: 25px 0 0 0;
+  }
+  .priceContactButton {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .priceLeafs {
+    width: 152px;
+    margin-top: 0;
   }
   .contacts {
-    max-height: 4307px;
+    max-height: 739px;
+    height: 739px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
-  .prices {
-    max-height: 585px;
+  h6 {
+    order: -1;
+    margin: 40px 0 0 0;
+  }
+  .contactsCityButton {
+    order: 0;
+    margin: -100px 0 0 0;
+  }
+  .contactsWoman {
+    order: 1;
+    width: 200px;
+    height: 248.49px;
+    margin: 0;
   }
   .footer {
     max-height: 181px;
+  }
+  .footerContent {
+    flex-direction: column;
+    height: 181px;
+    justify-content: space-around;
   }
 }

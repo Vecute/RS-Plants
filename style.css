@@ -157,14 +157,12 @@ body {
   height: 666px;
   background-color: #FFFFFF;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  margin: 0 30px;
   width: 100%;
-}
-
-.aboutUsText {
-  width: 605px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 1440px;
 }
 
 .aboutUsHeader {
@@ -174,13 +172,13 @@ body {
   font-weight: 400;
   font-size: 40px;
   line-height: 52px;
-  width: 463px;
-  height: 102px;
-  margin-top: 32px;
+  width: 620px;
+  padding-left: 25px;
 }
 
 .aboutUsHighlighting {
   color: #E06733;
+  padding: 0;
 }
 
 .aboutUsDescription {
@@ -190,8 +188,13 @@ body {
   font-size: 20px;
   line-height: 30px;
   color: #636060;
-  margin-top: 42px;
-  margin-left: 1px;
+  width: 620px;
+  padding-left: 25px;
+  margin-top: 4px;
+}
+
+.aboutUsHousePlant {
+  padding-right: 25px;
 }
 
 .service {
@@ -254,6 +257,53 @@ body {
   text-align: center;
   justify-content: space-between;
   padding-top: 41px;
+}
+
+.firstPic {
+  width: 330px;
+  height: 350px;
+  object-fit: cover;
+  border: 1px solid #E3E1D5;
+  border-radius: 20px 20px 0 0;
+}
+
+.secondPic {
+  width: 330px;
+  height: 350px;
+  object-fit: cover;
+  border: 1px solid #E3E1D5;
+  border-radius: 20px 20px 0 0;
+}
+
+.thirdPic {
+  width: 330px;
+  height: 350px;
+  object-fit: cover;
+  border: 1px solid #E3E1D5;
+  border-radius: 20px 20px 0 0;
+}
+
+.fourthPic {
+  width: 330px;
+  height: 350px;
+  object-fit: cover;
+  border: 1px solid #E3E1D5;
+  border-radius: 20px 20px 0 0;
+}
+
+.fifthPic {
+  width: 330px;
+  height: 350px;
+  object-fit: cover;
+  border: 1px solid #E3E1D5;
+  border-radius: 20px 20px 0 0;
+}
+.sixPic {
+  width: 330px;
+  height: 350px;
+  object-fit: cover;
+  border: 1px solid #E3E1D5;
+  border-radius: 20px 20px 0 0;
 }
 
 h2 {
@@ -549,17 +599,25 @@ h6 {
   .aboutUs {
     max-height: 783px;
     height: 783px;
-    flex-direction: column;
-    margin: 0;
+    justify-content: space-around;
   }
   .aboutUsHeader {
     font-size: 35px;
     line-height: 46px;
-    align-items: center;
+    margin-top: 35px;
+    padding: 0;
+    text-align: center;
+  }
+  .aboutUsDescription {
+    padding: 0;
+    padding-bottom: 30px;
+    width: 668px;
   }
   .aboutUsHousePlant{
     height: 258px;
     width: 250px;
+    padding: 0;
+    margin-bottom: 90px;
   }
   .service {
     max-height: 1780px;
@@ -568,21 +626,51 @@ h6 {
   .serviceTop {
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin-left: 55px;
+    margin-left: 96px;
     width: 768px;
+    margin-top: 25px;
   }
   .serviceHeader {
     font-size: 35px;
-    line-height: 45.61px;
+    line-height: 46px;
   }
   .serviceBottom {
     flex-wrap: wrap;
     justify-content: space-around;
-    height: 1426px;
+    height: 1504px;
     width: 768px;
+  }
+  .serviceCardDescription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .firstPic {
+    width: 280px;
+  }
+  .secondPic {
+    width: 280px;
+  }
+  
+  .thirdPic {
+    width: 280px;
+  }
+  
+  .fourthPic {
+    width: 280px;
+  }
+  
+  .fifthPic {
+    width: 280px;
+  }
+  .sixPic {
+    width: 280px;
   }
   .serviceCard {
     width: 281px;
+  }
+  h3 {
+    width: 210px;
   }
   .price {
     max-height: 585px;
@@ -590,6 +678,7 @@ h6 {
   }
   .priceContent {
     justify-content: space-around;
+    width: 668px;
   }
   .priceLeft {
     display: flex;
@@ -597,7 +686,7 @@ h6 {
     justify-content: flex-start;
   }
   .priceRates {
-    margin-top: 0;
+    margin-top: 2px;
   }
   .priceRight {
     justify-content: space-between;
@@ -605,21 +694,19 @@ h6 {
     height: 358px;
   }
   h4 {
-    font-size: 35px;
-    line-height: 42px;
+    margin-top: 24px;
+    margin-left: 14px;
   }
   .priceHeader {
     font-size: 25px;
     line-height: 35px;
-    margin: 25px 0 0 0;
   }
   .priceContactButton {
-    font-size: 20px;
-    line-height: 26px;
+    line-height: 48px;
+    margin-top: 4px;
   }
   .priceLeafs {
     width: 152px;
-    margin-top: 0;
   }
   .contacts {
     max-height: 739px;
@@ -640,7 +727,7 @@ h6 {
     order: 1;
     width: 200px;
     height: 248.49px;
-    margin: 0;
+    margin-left: 20px;
   }
   .footer {
     max-height: 181px;
@@ -654,9 +741,12 @@ h6 {
     justify-content: center;
   }
   .footerLeft {
-    padding: 16px 0 0 0;
+    padding: 17px 0 0 0;
   }
   .footerMiddle {
     padding: 7px 0 0 7px;
+  }
+  .footerSocialNetworks {
+    margin-bottom: 3px;
   }
 }

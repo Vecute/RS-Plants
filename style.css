@@ -19,7 +19,7 @@ html {
 
 body {
   background-color: #ffffff;
-  margin: 0;
+  //margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,14 +29,14 @@ body {
 }
 
 .header {
-  height: 3.463%;
-  width: 100%;
+  height: 134px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   font-family: 'Inika';
   font-size: 16px;
   background-color: #EDF2EC;
+  width: 1440px;
 }
 
 .headerContent {
@@ -44,7 +44,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 84.722%;
+  width: 1220px;
 }
 
 .headerLogo {
@@ -52,7 +52,7 @@ body {
 }
 
 .headerLogoPicture {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .headerLogoName {
@@ -82,9 +82,9 @@ body {
 }
 
 .main {
-  width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .home {
@@ -93,6 +93,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 1440px;
 }
 
 .homeText {
@@ -163,6 +164,7 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   max-width: 1440px;
+  width: 1440px;
 }
 
 .aboutUsHeader {
@@ -203,6 +205,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 1440px;
 }
 
 .serviceTop {
@@ -346,6 +349,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 1440px;
 }
 
 .priceContent {
@@ -452,11 +456,11 @@ h4 {
 }
 
 .contacts {
-  width: 100%;
   height: 550px;
   background-color: #EDF2EC;
   display: flex;
   justify-content: flex-start;
+  width: 1440px;
 }
 
 .contactsWoman {
@@ -502,7 +506,6 @@ h6 {
 
 .footer {
   height: 3.359%;
-  width: 100%;
   font-family: 'inter';
   font-style: normal;
   font-weight: 400;
@@ -513,6 +516,7 @@ h6 {
   justify-content: center;
   background-color: #FFFFFF;
   padding-bottom: 1px;
+  width: 1440px;
 }
 
 .footerContent {
@@ -561,6 +565,7 @@ h6 {
   .header {
     max-height: 117px;
     height: 117px;
+    width: 768px;
   }
   .headerContent {
     width: 668px;
@@ -573,6 +578,7 @@ h6 {
     height: 420px;
     align-items: center;
     padding: 0 20px;
+    width: 768px;
   }
   .homeText {
     order: -1;
@@ -600,6 +606,7 @@ h6 {
     max-height: 783px;
     height: 783px;
     justify-content: space-around;
+    width: 768px;
   }
   .aboutUsHeader {
     font-size: 35px;
@@ -622,6 +629,7 @@ h6 {
   .service {
     max-height: 1780px;
     height: 1780px;
+    width: 768px;
   }
   .serviceTop {
     flex-wrap: wrap;
@@ -675,6 +683,7 @@ h6 {
   .price {
     max-height: 585px;
     height: 585px;
+    width: 768px;
   }
   .priceContent {
     justify-content: space-around;
@@ -714,6 +723,7 @@ h6 {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    width: 768px;
   }
   h6 {
     order: -1;
@@ -734,6 +744,7 @@ h6 {
     height: 181px;
     justify-content: center;
     line-height: 24px;
+    width: 768px;
   }
   .footerContent {
     flex-direction: column;
@@ -748,5 +759,133 @@ h6 {
   }
   .footerSocialNetworks {
     margin-bottom: 3px;
+  }
+}
+
+#menu__toggle {
+  visibility: hidden;
+  position: absolute;
+}
+.burgerIcon {
+  visibility: hidden;
+  position: absolute;
+}
+
+@media (max-width: 380px) {
+  .header {
+    max-height: 96px;
+    height: 96px;
+    max-width: 380px;
+  }
+  .burgerIcon {
+    visibility: visible;
+    position: fixed;
+    top: 34px;
+    left: 314px;
+  }
+  #menu__toggle {
+    opacity: 0;
+  }
+  .menu__btn {
+    display: flex;
+    position: fixed;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .headerNav {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    text-align: center;
+    background-color: #EDF2EC;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  }
+  .headerNavLink {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-size: 25px;
+    text-decoration: none;
+  }
+  .headerNavLink:hover {
+    background-color: #ffffff;
+  }
+  #menu__toggle:checked ~ .headerNav {
+    visibility: visible;
+    left: 0;
+  }
+  .headerNav {
+    transition-duration: .25s;
+  }
+  .headerNavLink {
+    transition-duration: .25s;
+  }
+  .home {
+    width: 380px;
+    height: 300px;
+  }
+  .aboutUs {
+    width: 380px;
+    height: 516px;
+    margin: 0;
+    padding: 0;
+  }
+  .aboutUsHeader {
+    width: 380px;
+    font-size: 25px;
+    line-height: 33px;
+    margin: 0;
+    padding: 0;
+  }
+  .aboutUsHousePlant {
+    width: 150px;
+    height: 147px;
+    margin: 0;
+    padding: 0;
+  }
+  .aboutUsDescription {
+    width: 380px;
+    font-size: 15px;
+    line-height: 25px;
+    margin: 0;
+    padding: 0;
+  }
+  .service {
+    width: 380px;
+    height: 3150px;
+  }
+  .serviceTop {
+    width: 380px;
+    padding: 0;
+    margin: 0;
+  }
+  .serviceBottom {
+    width: 380px;
+  }
+  .serviceButtons {
+    flex-wrap: wrap;
+    width: 380px;
+  }
+  .price {
+    width: 380px;
+    height: 512px;
+  }
+  .priceContent {
+    width: 380px;
+    height: 512px;
+  }
+  .contacts {
+    width: 380px;
+    height: 445px;
+  }
+  .footer {
+    width: 380px;
+    height: 146px;
   }
 }

@@ -19,7 +19,7 @@ html {
 
 body {
   background-color: #ffffff;
-  //margin: auto;
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -81,10 +81,11 @@ body {
   font-weight: bold;
 }
 
-.main {
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
 .home {
@@ -675,7 +676,7 @@ h6 {
     width: 280px;
   }
   .serviceCard {
-    width: 281px;
+    width: 280px;
   }
   h3 {
     width: 210px;
@@ -772,6 +773,13 @@ h6 {
 }
 
 @media (max-width: 380px) {
+  body {
+    height: 5165px;
+    width: 380px;
+  }
+  main {
+    height: 4923px;
+  }
   .header {
     max-height: 96px;
     height: 96px;
@@ -781,7 +789,7 @@ h6 {
     visibility: visible;
     position: fixed;
     top: 34px;
-    left: 314px;
+    left: 315px;
   }
   #menu__toggle {
     opacity: 0;
@@ -791,6 +799,9 @@ h6 {
     position: fixed;
     cursor: pointer;
     z-index: 1;
+  }
+  .headerLogo {
+    padding: 6px 0 0 25px;
   }
   .headerNav {
     display: block;
@@ -830,6 +841,31 @@ h6 {
     width: 380px;
     height: 300px;
   }
+  .homeLeafs {
+    position: absolute;
+    visibility: hidden;
+  }
+  .homeText {
+    width: 380px;
+    height: 300px;
+    margin: 0;
+    padding: 16px 0 12px 5px;;
+    justify-content: space-around;
+  }
+  .homeHeader {
+    font-size: 25px;
+    line-height: 35px;
+  }
+  .homeLearnMore {
+    width: 100px;
+    height: 34.14px;
+    font-size: 10px;
+    line-height: 20px;
+    margin: 0;
+  }
+  .homeDescription {
+    margin-bottom: 3px;
+  }
   .aboutUs {
     width: 380px;
     height: 516px;
@@ -840,52 +876,167 @@ h6 {
     width: 380px;
     font-size: 25px;
     line-height: 33px;
-    margin: 0;
-    padding: 0;
+    margin: 24px 0 0 0;
   }
   .aboutUsHousePlant {
     width: 150px;
     height: 147px;
-    margin: 0;
+    margin: -24px 0 24px 0;
     padding: 0;
   }
   .aboutUsDescription {
-    width: 380px;
+    width: 330px;
     font-size: 15px;
     line-height: 25px;
-    margin: 0;
+    margin: 0 0 12px 0;
     padding: 0;
   }
   .service {
     width: 380px;
     height: 3150px;
+    max-height: 3150px;
   }
   .serviceTop {
-    width: 380px;
+    width: 330px;
     padding: 0;
     margin: 0;
+    height: 220px;
+    margin-bottom: 33px;
   }
-  .serviceBottom {
-    width: 380px;
+  .serviceHeader {
+    font-size: 25px;
+    line-height: 33px;
+    margin-top: 30px;
   }
   .serviceButtons {
     flex-wrap: wrap;
-    width: 380px;
+    width: 252px;
+    margin-bottom: 5px;
+  }
+  .serviceButton {
+    width: 121px;
+    height: 35px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .serviceBottom {
+    width: 280px;
+    height: 2870px;
+    padding: 0;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  h2{
+    margin-top: 8px;
+  }
+  h3{
+    margin-top: -2px;
   }
   .price {
     width: 380px;
     height: 512px;
+    justify-content: flex-start;
+    flex-direction: column;
   }
   .priceContent {
     width: 380px;
-    height: 512px;
+    height: 447px;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 26px;
+  }
+  .priceLeft {
+    height: 302px;
+    width: 380px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  h4 {
+    font-size: 25px;
+    line-height: 30px;
+    margin: 0;
+    text-align: center;
+  }
+  .priceRates {
+    width: 224px;
+    height: 235px;
+    margin: 0;
+    justify-content: space-between;
+    padding: 29px 22px;
+  }
+  .priceRateButton {
+    width: 180px;
+    height: 50px;
+    font-size: 15px;
+    line-height: 20px;
+    justify-content: space-between;
+    padding: 3px 39px 0 30px;
+  }
+  .priceRateButtonEdit {
+    padding: 3px 39px 0 30px;
+  }
+  .priceRight {
+    width: 380px;
+    height: 126px;
+    margin: 0;
+    align-items: center;
+  }
+  .priceHeader {
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+    margin: 0;
+    width: 230px;
+  }
+  .priceContactButton {
+    font-size: 15px;
+    line-height: 20px;
+    width: 121px;
+    height: 35px;
+  }
+  .priceLeafs {
+    visibility: hidden;
+    position: absolute;
+    width: 10px;
+    height: 10px;
   }
   .contacts {
     width: 380px;
     height: 445px;
   }
+  h6 {
+    font-size: 25px;
+    line-height: 33px;
+    margin-top: 26px;
+    margin-right: 2px;
+  }
+  .contactsCityButton {
+    width: 300px;
+    height: 50px;
+    margin: 0 2px 0px 0;
+    padding: 0 20px;
+  }
+  .contactsWoman {
+    width: 100px;
+    height: 124.25px;
+    margin-right: 4px;
+    margin-left: 0;
+  }
   .footer {
     width: 380px;
     height: 146px;
+  }
+  .footerContent {
+    width: 380px;
+    height: 146px;
+  }
+  .footerLeft {
+    padding: 22px 0 0 0;
+  }
+  .footerMiddle {
+    padding: 14px 0 0 9px;
+  }
+  .footerRight {
+    padding: 0 0 9px 0;
   }
 }

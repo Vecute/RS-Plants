@@ -36,7 +36,7 @@ body {
   font-family: 'Inika';
   font-size: 16px;
   background-color: #EDF2EC;
-  width: 1440px;
+  width: 100%;
 }
 
 .headerContent {
@@ -44,7 +44,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 1220px;
+  width: 84.722%;
 }
 
 .headerLogo {
@@ -85,7 +85,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+  width: 100%;
 }
 
 .home {
@@ -94,7 +94,7 @@ main {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 1440px;
+  width: 100%;
 }
 
 .homeText {
@@ -164,8 +164,6 @@ main {
   width: 100%;
   flex-direction: column;
   flex-wrap: wrap;
-  max-width: 1440px;
-  width: 1440px;
 }
 
 .aboutUsHeader {
@@ -175,7 +173,7 @@ main {
   font-weight: 400;
   font-size: 40px;
   line-height: 52px;
-  width: 620px;
+  width: 43.056%;
   padding-left: 25px;
 }
 
@@ -191,7 +189,7 @@ main {
   font-size: 20px;
   line-height: 30px;
   color: #636060;
-  width: 620px;
+  width: 43.056%;
   padding-left: 25px;
   margin-top: 4px;
 }
@@ -206,11 +204,11 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 1440px;
+  width: 100%;
 }
 
 .serviceTop {
-  width: 1222px;
+  width: 84.861%;
   display: flex;
   flex-direction: row;
 }
@@ -254,7 +252,7 @@ main {
 }
 
 .serviceBottom {
-  width: 1222px;
+  width: 84.861%;
   height: 1055px;
   display: flex;
   flex-wrap: wrap;
@@ -350,11 +348,11 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1440px;
+  width: 100%;
 }
 
 .priceContent {
-  width: 1222px;
+  width: 84.861%;
   height: 405px;
   display: flex;
   flex-direction: row;
@@ -460,14 +458,16 @@ h4 {
   height: 550px;
   background-color: #EDF2EC;
   display: flex;
-  justify-content: flex-start;
-  width: 1440px;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .contactsWoman {
   display: flex;
   margin-top: 52px;
-  margin-left: 109px;
+  height: 497px;
+  width: 400px;
+  margin-left: 55px;
 }
 
 h6 {
@@ -479,7 +479,7 @@ h6 {
   line-height: 52px;
   color: #499A18;
   margin-top: 59px;
-  margin-left: 113px;
+  margin-right: -45px;
 }
 
 .contactsCityButton {
@@ -487,13 +487,12 @@ h6 {
   justify-content: space-between;
   align-items: center;
   height: 50px;
-  width: 450px;
+  width: 31.25%;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 40px;
-  letter-spacing: 0.05em;
   color: #717171;
   background: #D6E7D2;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -502,7 +501,7 @@ h6 {
   padding-left: 20px;
   padding-right: 35px;
   margin-top: 147px;
-  margin-left: 70px;
+  margin-right: 56px;
 }
 
 .footer {
@@ -517,11 +516,11 @@ h6 {
   justify-content: center;
   background-color: #FFFFFF;
   padding-bottom: 1px;
-  width: 1440px;
+  width: 100%;
 }
 
 .footerContent {
-  width: 1220px;
+  width: 84.722%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -554,6 +553,12 @@ h6 {
   align-items: center;
 }
 
+@media (max-width: 885px) {
+  .aboutUsHousePlant {
+    width: 185.6px;
+    height: 191.6px;
+  }
+}
 @media (max-width: 768px) {
   body {
     height: 4605px;
@@ -608,6 +613,7 @@ h6 {
     height: 783px;
     justify-content: space-around;
     width: 768px;
+    flex-direction: row;
   }
   .aboutUsHeader {
     font-size: 35px;
@@ -615,6 +621,7 @@ h6 {
     margin-top: 35px;
     padding: 0;
     text-align: center;
+    width: 768px;
   }
   .aboutUsDescription {
     padding: 0;
@@ -626,6 +633,8 @@ h6 {
     width: 250px;
     padding: 0;
     margin-bottom: 90px;
+    visibility: visible;
+    position: relative;
   }
   .service {
     max-height: 1780px;
@@ -733,6 +742,7 @@ h6 {
   .contactsCityButton {
     order: 0;
     margin: -100px 0 0 0;
+    width: 450px;
   }
   .contactsWoman {
     order: 1;

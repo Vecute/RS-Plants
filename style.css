@@ -19,13 +19,14 @@ html {
 
 body {
   background-color: #ffffff;
-  margin: auto;
+  \\margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   max-width: 1440px;
   height: 3870px;
+  margin: 0;
 }
 
 .header {
@@ -347,7 +348,7 @@ h3 {
   background-color: #FFFFFF;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
 }
 
@@ -358,6 +359,7 @@ h3 {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .priceLeft {
@@ -553,99 +555,21 @@ h6 {
   align-items: center;
 }
 
-@media (max-width: 885px) {
+@media (max-width: 1166px) {
   .aboutUsHousePlant {
-    width: 185.6px;
-    height: 191.6px;
-  }
-}
-@media (max-width: 768px) {
-  body {
-    height: 4605px;
-    width: 768px;
-    justify-content: flex-start;
-  }
-  main {
-    height: 4307px;
-  }
-  .header {
-    max-height: 117px;
-    height: 117px;
-    width: 768px;
-  }
-  .headerContent {
-    width: 668px;
-  }
-  .headerNav {
-    line-height: 50px;
-  }
-  .home {
-    max-height: 420px;
-    height: 420px;
-    align-items: center;
-    padding: 0 20px;
-    width: 768px;
-  }
-  .homeText {
-    order: -1;
-    width: 45.052%;
-    height: 310px;
-    justify-content: space-between;
-    margin-top: -35px;
-  }
-  .homeLeafs {
-    width: 36.458%;
-    margin-top: -70px;
-  }
-  .homeHeader {
-    font-size: 35px;
-  }
-  .homeDescription {
-    font-size: 16px;
-    line-height: 25px;
-    margin: 0;
-  }
-  .homeLearnMore {
-    margin-left: -3px;
-  }
-  .aboutUs {
-    max-height: 783px;
-    height: 783px;
-    justify-content: space-around;
-    width: 768px;
-    flex-direction: row;
-  }
-  .aboutUsHeader {
-    font-size: 35px;
-    line-height: 46px;
-    margin-top: 35px;
-    padding: 0;
-    text-align: center;
-    width: 768px;
-  }
-  .aboutUsDescription {
-    padding: 0;
-    padding-bottom: 30px;
-    width: 668px;
-  }
-  .aboutUsHousePlant{
     height: 258px;
     width: 250px;
-    padding: 0;
-    margin-bottom: 90px;
-    visibility: visible;
-    position: relative;
   }
-  .service {
-    max-height: 1780px;
-    height: 1780px;
-    width: 768px;
+  .aboutUsDescription {
+    width: 100%;
+  }
+  .aboutUsHeader {
+    width: 100%;
   }
   .serviceTop {
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin-left: 96px;
-    width: 768px;
+    margin-right: 19px;
     margin-top: 25px;
   }
   .serviceHeader {
@@ -656,7 +580,7 @@ h6 {
     flex-wrap: wrap;
     justify-content: space-around;
     height: 1504px;
-    width: 768px;
+    width: 100%;
   }
   .serviceCardDescription {
     display: flex;
@@ -690,14 +614,114 @@ h6 {
   h3 {
     width: 210px;
   }
+}
+@media (max-width: 885px) {
+  .aboutUsHousePlant {
+    height: 258px;
+    width: 250px;
+  }
+  .aboutUsDescription {
+    width: 100%;
+  }
+  .aboutUsHeader {
+    width: 100%;
+  }
+}
+@media (max-width: 839px) {
+  body {
+    height: 4368px;
+  }
+  .service {
+    max-height: 1780px;
+    height: 1780px;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    height: 4605px;
+    max-width: 768px;
+    justify-content: flex-start;
+  }
+  main {
+    height: 4307px;
+    width: 100%;
+  }
+  .header {
+    max-height: 117px;
+    height: 117px;
+    width: 100%;
+  }
+  .headerContent {
+    width: 86.979%;
+  }
+  .headerNav {
+    line-height: 50px;
+  }
+  .home {
+    max-height: 420px;
+    height: 420px;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+  }
+  .homeText {
+    order: -1;
+    width: 45.052%;
+    height: 310px;
+    justify-content: space-between;
+    margin-top: -35px;
+  }
+  .homeLeafs {
+    width: 36.458%;
+    margin-top: -70px;
+  }
+  .homeHeader {
+    font-size: 35px;
+  }
+  .homeDescription {
+    font-size: 16px;
+    line-height: 25px;
+    margin: 0;
+  }
+  .homeLearnMore {
+    margin-left: -3px;
+  }
+  .aboutUs {
+    max-height: 783px;
+    height: 783px;
+    justify-content: space-around;
+    width: 100%;
+    flex-direction: row;
+  }
+  .aboutUsHeader {
+    font-size: 35px;
+    line-height: 46px;
+    margin-top: 35px;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+  }
+  .aboutUsDescription {
+    padding: 0;
+    padding-bottom: 30px;
+    width: 86.979%;
+  }
+  .aboutUsHousePlant{
+    padding: 0;
+    margin-bottom: 90px;
+    visibility: visible;
+    position: relative;
+  }
   .price {
     max-height: 585px;
     height: 585px;
-    width: 768px;
+    width: 100%;
   }
   .priceContent {
     justify-content: space-around;
-    width: 668px;
+    width: 89%;
+    margin-top: 16px;
   }
   .priceLeft {
     display: flex;
@@ -705,16 +729,19 @@ h6 {
     justify-content: flex-start;
   }
   .priceRates {
-    margin-top: 2px;
+    margin-top: 11px;
   }
   .priceRight {
     justify-content: space-between;
-    width: 358px;
+    width: 46.615%;
     height: 358px;
+    margin-bottom: 6px;
   }
   h4 {
+    font-size: 35px;
+    line-height: 42px;
     margin-top: 24px;
-    margin-left: 14px;
+    margin-left: 15px;
   }
   .priceHeader {
     font-size: 25px;
@@ -733,7 +760,7 @@ h6 {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 768px;
+    width: 100%;
   }
   h6 {
     order: -1;
@@ -742,7 +769,7 @@ h6 {
   .contactsCityButton {
     order: 0;
     margin: -100px 0 0 0;
-    width: 450px;
+    width: 58.594%;
   }
   .contactsWoman {
     order: 1;
@@ -755,7 +782,7 @@ h6 {
     height: 181px;
     justify-content: center;
     line-height: 24px;
-    width: 768px;
+    width: 100%;
   }
   .footerContent {
     flex-direction: column;
@@ -773,6 +800,35 @@ h6 {
   }
 }
 
+@media (max-width: 698px) {
+  .priceLeafs {
+    position: fixed;
+    visibility: hidden;
+  }
+  .priceLeft {
+    height: 340px;
+  }
+  h4 {
+    margin: 0;
+  }
+  .priceRight {
+    height: 250px;
+    justify-content: flex-start;
+    width: 450px;
+    align-items: center;
+  }
+  .priceLeft {
+    align-items: center;
+    justify-content: space-between;
+  }
+  h4 {
+    text-align: center;
+  }
+  .priceHeader {
+    text-align: center;
+  }
+}
+
 #menu__toggle {
   visibility: hidden;
   position: absolute;
@@ -782,24 +838,12 @@ h6 {
   position: absolute;
 }
 
-@media (max-width: 380px) {
-  body {
-    height: 5165px;
-    width: 380px;
-  }
-  main {
-    height: 4923px;
-  }
-  .header {
-    max-height: 96px;
-    height: 96px;
-    max-width: 380px;
-  }
+@media (max-width: 650px) {
   .burgerIcon {
     visibility: visible;
     position: fixed;
     top: 34px;
-    left: 315px;
+    right: 25px;
   }
   #menu__toggle {
     opacity: 0;
@@ -826,6 +870,7 @@ h6 {
     text-align: center;
     background-color: #EDF2EC;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    z-index: 1;
   }
   .headerNavLink {
     display: block;
@@ -847,16 +892,66 @@ h6 {
   .headerNavLink {
     transition-duration: .25s;
   }
-  .home {
-    width: 380px;
-    height: 300px;
+  .serviceTop {
+    margin-left: 0;
+  }
+  .serviceButtons {
+    flex-wrap: wrap;
   }
   .homeLeafs {
     position: absolute;
     visibility: hidden;
   }
   .homeText {
-    width: 380px;
+    width: 100%;
+  }
+}
+@media (max-width: 560px) {
+  body {
+    height: 5875px;
+  }
+  main {
+    height: 5577px;
+  }
+  .service {
+    height: 3050px;
+    max-height: 3050px;
+  }
+}
+@media (max-width: 384px) {
+  body {
+    height: 5975px;
+  }
+  main {
+    height: 5977px;
+  }
+  .service {
+    height: 3150px;
+    max-height: 3150px;
+  }
+}
+@media (max-width: 380px) {
+  body {
+    height: 5165px;
+    width: 100%;
+  }
+  main {
+    height: 4923px;
+  }
+  .header {
+    max-height: 96px;
+    height: 96px;
+    max-width: 380px;
+  }
+  .headerLogo {
+    padding: 3px 0 0 0;
+  }
+  .home {
+    width: 100%;
+    height: 300px;
+  }
+  .homeText {
+    width: 100%;
     height: 300px;
     margin: 0;
     padding: 16px 0 12px 5px;;
@@ -877,13 +972,13 @@ h6 {
     margin-bottom: 3px;
   }
   .aboutUs {
-    width: 380px;
+    width: 100%;
     height: 516px;
     margin: 0;
     padding: 0;
   }
   .aboutUsHeader {
-    width: 380px;
+    width: 100%;
     font-size: 25px;
     line-height: 33px;
     margin: 24px 0 0 0;
@@ -895,19 +990,19 @@ h6 {
     padding: 0;
   }
   .aboutUsDescription {
-    width: 330px;
+    width: 86.842%;
     font-size: 15px;
     line-height: 25px;
     margin: 0 0 12px 0;
     padding: 0;
   }
   .service {
-    width: 380px;
+    width: 100%;
     height: 3150px;
     max-height: 3150px;
   }
   .serviceTop {
-    width: 330px;
+    width: 86.842%;
     padding: 0;
     margin: 0;
     height: 220px;
@@ -943,13 +1038,13 @@ h6 {
     margin-top: -2px;
   }
   .price {
-    width: 380px;
+    width: 100%;
     height: 512px;
     justify-content: flex-start;
     flex-direction: column;
   }
   .priceContent {
-    width: 380px;
+    width: 100%;
     height: 447px;
     flex-direction: column;
     justify-content: space-between;
@@ -957,15 +1052,12 @@ h6 {
   }
   .priceLeft {
     height: 302px;
-    width: 380px;
-    align-items: center;
-    justify-content: space-between;
+    width: 100%;
   }
   h4 {
     font-size: 25px;
     line-height: 30px;
     margin: 0;
-    text-align: center;
   }
   .priceRates {
     width: 224px;
@@ -986,7 +1078,7 @@ h6 {
     padding: 3px 39px 0 30px;
   }
   .priceRight {
-    width: 380px;
+    width: 100%;
     height: 126px;
     margin: 0;
     align-items: center;
@@ -994,7 +1086,6 @@ h6 {
   .priceHeader {
     font-size: 20px;
     line-height: 35px;
-    text-align: center;
     margin: 0;
     width: 230px;
   }
@@ -1003,6 +1094,7 @@ h6 {
     line-height: 20px;
     width: 121px;
     height: 35px;
+    margin-top: 20px;
   }
   .priceLeafs {
     visibility: hidden;
@@ -1011,7 +1103,7 @@ h6 {
     height: 10px;
   }
   .contacts {
-    width: 380px;
+    width: 100%;
     height: 445px;
   }
   h6 {
@@ -1033,11 +1125,11 @@ h6 {
     margin-left: 0;
   }
   .footer {
-    width: 380px;
+    width: 100%;
     height: 146px;
   }
   .footerContent {
-    width: 380px;
+    width: 100%;
     height: 146px;
   }
   .footerLeft {
@@ -1048,5 +1140,10 @@ h6 {
   }
   .footerRight {
     padding: 0 0 9px 0;
+  }
+}
+@media (max-width: 319px) {
+  body {
+    width: 319px;
   }
 }

@@ -19,7 +19,7 @@ html {
 
 body {
   background-color: #ffffff;
-  \\margin: auto;
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -627,6 +627,49 @@ h6 {
     width: 100%;
   }
 }
+@media (max-width: 941px) {
+.price {
+    max-height: 585px;
+    height: 585px;
+    width: 100%;
+  }
+  .priceContent {
+    justify-content: space-around;
+    width: 89%;
+    margin-top: 16px;
+  }
+  .priceLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .priceRates {
+    margin-top: 11px;
+  }
+  .priceRight {
+    justify-content: space-between;
+    width: 46.615%;
+    height: 358px;
+    margin-bottom: 6px;
+  }
+  h4 {
+    font-size: 35px;
+    line-height: 42px;
+    margin-top: 24px;
+    margin-left: 15px;
+  }
+  .priceHeader {
+    font-size: 25px;
+    line-height: 35px;
+  }
+  .priceContactButton {
+    line-height: 48px;
+    margin-top: 4px;
+  }
+  .priceLeafs {
+    width: 152px;
+  }
+}
 @media (max-width: 839px) {
   body {
     height: 4368px;
@@ -713,47 +756,10 @@ h6 {
     visibility: visible;
     position: relative;
   }
-  .price {
-    max-height: 585px;
-    height: 585px;
-    width: 100%;
-  }
-  .priceContent {
-    justify-content: space-around;
-    width: 89%;
-    margin-top: 16px;
-  }
-  .priceLeft {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-  .priceRates {
-    margin-top: 11px;
-  }
-  .priceRight {
-    justify-content: space-between;
-    width: 46.615%;
-    height: 358px;
-    margin-bottom: 6px;
-  }
-  h4 {
-    font-size: 35px;
-    line-height: 42px;
-    margin-top: 24px;
-    margin-left: 15px;
-  }
-  .priceHeader {
-    font-size: 25px;
-    line-height: 35px;
-  }
-  .priceContactButton {
-    line-height: 48px;
-    margin-top: 4px;
-  }
-  .priceLeafs {
-    width: 152px;
-  }
+  
+
+
+
   .contacts {
     max-height: 739px;
     height: 739px;
@@ -916,6 +922,10 @@ h6 {
   .service {
     height: 3050px;
     max-height: 3050px;
+  }
+  .aboutUsHousePlant {
+    width: 150px;
+    height: 147px;
   }
 }
 @media (max-width: 384px) {
